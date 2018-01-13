@@ -1,2 +1,2 @@
-# Vue-DockerSimplePlatfor
-Docker 简易调度平台
+# Vue-DockerSimplePlatform
+Docker 简易调度云平台
