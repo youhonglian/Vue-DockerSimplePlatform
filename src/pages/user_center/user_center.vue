@@ -66,7 +66,7 @@ export default {
       if(changePassInput.value == '') {
         // that.fail()
       } else {
-          this.axios.post('/api/dsp/auth/changepass', {"username": `${username}`,"newpass": `${newpass}`}).then((response) => {
+          this.axios.post('http://192.168.123.251/dsp/auth/changepass', {"username": `${username}`,"newpass": `${newpass}`}).then((response) => {
           if(response.data == true) {
              that.success()    
              changePassInput.value = ""
