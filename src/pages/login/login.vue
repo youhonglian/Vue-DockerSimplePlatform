@@ -78,7 +78,7 @@
         this.$refs[formName].validate((valid) => {                 
         if (valid) {
           let that = this        
-          this.axios.post('/api/dsp/auth/login',this.ruleForm2).then((response) => {
+          this.axios.post('http://192.168.123.251/api/dsp/auth/login',this.ruleForm2).then((response) => {
               let flag = response.data
               if(flag == true) {
                 sessionStorage.username = this.ruleForm2.username
